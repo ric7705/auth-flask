@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+        <a href="/register">Register</a>
+    </div>
+
+    <div>
+        <a href="/login">Login</a>
+    </div>
+
+    <div>
+        <a id="protected_page" href="/protected_page">Login in to see registered members</a>
+    </div>
+{% endblock %}
+
+
+{% block js_dependency %}
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}

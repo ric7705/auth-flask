@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>all registered members:</p>
+
+
+    <div id="members">
+<ol>
+
+</ol>
+</div>
+<a href="/">back</a>
+
+
+{% endblock %}
+
+
+{% block js_dependency %}
+<script src="{{ url_for('static', filename='js/protected_page.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    user name: <input type="text" name="username" id="username"/>
+    <br>
+    password:<input type="text" name="password" id="password"/>
+    <br>
+    <button onclick="register()">submit</button>
+</div>
+
+{% endblock %}
+
+
+
+{% block js_dependency %}
+<script src="{{ url_for('static', filename='js/register.js') }}"></script>
+{% endblock %}

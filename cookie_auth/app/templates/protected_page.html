@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>all registered members:</p>
+
+
+<ol>
+{%for i in users %}
+    <li>{{i['username']}}</li>
+{%endfor%}
+</ol>
+
+<a href="/">back</a>
+
+
+{% endblock %}
